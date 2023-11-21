@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">  
+    <title>Dictionary App in JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CDN Link for Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <style>
+      .download-btn-cn{
+        position: fixed;
+        bottom: 40px;
+        left: 40px;
+        z-index: 99999;
+      }
+      .download-btn-cn a{
+        background: none;
+        padding: 13px 22px;
+        font-size: 16px;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 6px;
+        border: 2px solid #fff;
+        font-family: 'Poppins', sans-serif;
+        transition: all 0.3s ease;
+      }
+      .download-btn-cn a:hover{
+          color: #4D59FB;
+          background: #fff;
+      }
+      @media screen and (max-width: 600px){
+          .download-btn-cn{
+              left: 20px;
+          }
+          .download-btn-cn a{
+              font-size: 13px;
+              padding: 9px 15px;
+          }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="download-btn-cn">
+      <a href="https://www.codingnepalweb.com/" target="_blank">Download Code Files</a>
+    </div>
+    <div class="wrapper">
+      <header>English Dictionary</header>
+      <div class="search">
+        <input type="text" placeholder="Search a word" required spellcheck="false">
+        <i class="fas fa-search"></i>
+        <span class="material-icons">close</span>
+      </div>
+      <p class="info-text">Type any existing word and press enter to get meaning, example, synonyms, etc.</p>
+      <ul>
+        <li class="word">
+          <div class="details">
+            <p>__</p>
+            <span>_ _</span>
+          </div>
+          <i class="fas fa-volume-up"></i>
+        </li>
+        <div class="content">
+          <li class="meaning">
+            <div class="details">
+              <p>Meaning</p>
+              <span>___</span>
+            </div>
+          </li>
+          <li class="example">
+            <div class="details">
+              <p>Example</p>
+              <span>___</span>
+            </div>
+          </li>
+          <li class="synonyms">
+            <div class="details">
+              <p>Synonyms</p>
+              <div class="list"></div>
+            </div>
+          </li>
+        </div>
+      </ul>
+    </div>
+    
+    <script src="script.js"></script>
+
+  </body>
+</html>
